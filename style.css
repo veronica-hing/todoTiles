@@ -1,0 +1,43 @@
+*{
+  margin:0px;
+  padding: 0px;
+  background: cyan;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.entry{
+  margin:30px auto;
+  width:300px;
+  padding: 5px;
+  background: blue;
+}
+
+.newTodo{
+  background: pink;
+  width: 300px;
+  padding:30px;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 24px;
+}
+
+h1{
+  text-align: center;
+  margin: 100px;
+  color: pink;
+}
+
+button{
+  padding:5px;
+  float: right;
+}
+
+input{
+  padding: inherit;
+}
+
+span{
+  background: inherit;
+  overflow-wrap: anywhere;
+}
