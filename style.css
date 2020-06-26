@@ -6,8 +6,12 @@
 }
 
 /*Universal styling*/
+body{
+    background-image: url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .page-container{
-  background-image: url('./images/background.jpg');
   position: relative;
   min-height: 100vh;
 }
@@ -16,6 +20,23 @@
   padding-bottom: 2.5rem;
 }
 
+button{
+  height: 26px;
+  padding: 0 10px 0 10px;
+  opacity: 1;
+  background-color: #2b51ba;
+  border-style: none;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+button:hover{
+  font-weight: bold;
+}
+
+.clr{
+  float: none;
+}
 /*Header*/
 header{
   padding: 10px;
@@ -26,33 +47,86 @@ header{
 /*adderTile*/
 .adderTile{
   background: #fcfcfc;
-  opacity: .5;
+  opacity: .7;
   margin: auto;
+  padding: 10px;
   width: 90%;
   border-radius: 5px;
 }
 
 .adderTile h1{
-  color: blue;
+  color: #757575;
   font-weight: bold;
   padding: 10px;
   text-align: center;
 }
 
 .entry{
-  width: 300px;
+  width: 90%;
   margin: auto;
   padding: 10px;
-  background: yellow;
+  margin-bottom: 10px;
+  align-items: center;
 }
 
+.entry input{
+  height: 26px;
+  width: 75%;
+  float: left;
+  padding: 10px
+}
+
+.entry button{
+  width: 15%;
+  float: right;
+}
+
+.clearAll{
+  margin: 40px auto;
+  text-align: center;
+}
+.clearAll button{
+  width: 85%;
+}
 /*Tile Styling*/
+
+.newTodo{
+  width: 50%;
+  margin: 25px auto;
+  padding: 30px;
+  background-color: #a3a3a3;
+  opacity: .7;
+  border-radius: 5px;
+  color: #000000;
+}
+
+.stuff{
+  width: 60%;
+  word-wrap: break-word;
+  display: inline-block;
+  margin: 10px auto;
+}
+
+.del{
+  width: 40%;
+  padding: 10px auto;
+  text-align: right;
+  display: inline-block;
+}
 /*Footer Styling*/
 #footer{
   position: absolute;
   bottom:0;
   width: 100%;
   height:2.5rem;
-  background-color: gray;
+  background-color: #002f9e;
+  opacity: .7;
   padding: .7em;
+  color: #ffffff;
+}
+
+footer a{
+  color: #ffffff;
+  text-decoration: none;
+  float: right;
 }

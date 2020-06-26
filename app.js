@@ -10,7 +10,7 @@ class Todo{
     this.id = count;
     this.tile = document.createElement('div');
     this.tile.setAttribute('class', 'newTodo');
-    this.tile.innerHTML = "<span>" + this.entry +"</span>" + "<span><button id = " + this.id + ">Remove Item</button></span>";
+    this.tile.innerHTML = "<div class = 'stuff'><span>" + this.entry +"</span></div>" + "<div class = 'del'><button id = " + this.id + ">Remove Item</button></div><div class='clr'></div>";
     document.getElementById('listArea').appendChild(this.tile)
     document.getElementById(this.id).setAttribute('class','button');
   }
