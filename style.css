@@ -1,43 +1,58 @@
 *{
-  margin:0px;
-  padding: 0px;
-  background: cyan;
+  margin:0;
+  padding:0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
+}
+
+/*Universal styling*/
+.page-container{
+  background-image: url('./images/background.jpg');
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap{
+  padding-bottom: 2.5rem;
+}
+
+/*Header*/
+header{
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  opacity: .5;
+}
+/*adderTile*/
+.adderTile{
+  background: #fcfcfc;
+  opacity: .5;
+  margin: auto;
+  width: 90%;
+  border-radius: 5px;
+}
+
+.adderTile h1{
+  color: blue;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
 }
 
 .entry{
-  margin:30px auto;
-  width:300px;
-  padding: 5px;
-  background: blue;
-}
-
-.newTodo{
-  background: pink;
   width: 300px;
-  padding:30px;
-  margin: 10px auto;
-  text-align: center;
-  font-size: 24px;
+  margin: auto;
+  padding: 10px;
+  background: yellow;
 }
 
-h1{
-  text-align: center;
-  margin: 100px;
-  color: pink;
-}
-
-button{
-  padding:5px;
-  float: right;
-}
-
-input{
-  padding: inherit;
-}
-
-span{
-  background: inherit;
-  overflow-wrap: anywhere;
+/*Tile Styling*/
+/*Footer Styling*/
+#footer{
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  height:2.5rem;
+  background-color: gray;
+  padding: .7em;
 }

@@ -11,12 +11,12 @@ class Todo{
     this.tile = document.createElement('div');
     this.tile.setAttribute('class', 'newTodo');
     this.tile.innerHTML = "<span>" + this.entry +"</span>" + "<span><button id = " + this.id + ">Remove Item</button></span>";
-    document.body.appendChild(this.tile)
+    document.getElementById('listArea').appendChild(this.tile)
     document.getElementById(this.id).setAttribute('class','button');
   }
 
   delete(){
-    document.body.removeChild(this.tile);
+    document.getElementById('listArea').removeChild(this.tile);
     localStorage.removeItem(JSON.stringify(this.id));
   }
 }//end Todo Class
@@ -28,6 +28,7 @@ localStorage.setItem(JSON.stringify(todo.id), JSON.stringify(todo));
 count += 1;//for next todo item, not current
 let deleteMe = document.getElementById(todo.id);
 deleteMe.addEventListener('click',function(){todo.delete();});
+entry.value = '';
 }//end add container
 
 adme.addEventListener('click', function(){addContainer();});
@@ -58,5 +59,11 @@ getLocalStorage();
 
 clearAll.addEventListener('click', function(){
   console.log('cleared local storage');
+  while(document.getElementById('listArea').hasChildNodes()){
+    let temp = document.getElementById('listArea').firstChild
+    ;
+    document.getElementById('listArea').removeChild(temp);
+  }
   localStorage.clear();
+
 });
